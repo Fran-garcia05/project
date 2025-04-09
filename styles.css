@@ -1,21 +1,28 @@
-.navegacion{
-    display: flex;
-    font-size: medium;
-    flex-direction: column;  
-}
+
 
 .navegacion{
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    background-color:cadetblue;   
+    background-color:cadetblue;
+    font-size: medium;
+    gap: 20px;
+
 }
 
 .navegacion a{
-    padding: 50px;
     background-color:cadetblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
     color:brown;
+}
+@media (min-width:500px){
+    .navegacion{
+        flex-direction: row;
+    }
+    .navegacion a{
+        padding: 10px 0px;
+    }
 }
 
 .fondoimagen{
@@ -69,28 +76,26 @@
     margin-bottom: 0;
 }
 
-.camisetas_fila1{
+.camisetas_fila{
     display: flex;
     flex-direction: row;
-    gap: 235px;
+    gap: 10px;
     background-color: rgb(218, 218, 228);
-    padding-left: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
-
-
-.camisetas_fila2{
+.camisetas{
     display: flex;
-    flex-direction: row;
-    gap: 255px;
-    background-color:rgb(218, 218, 228);
-    padding-left: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 .camisetas img{
+    width: 100%;
     border-radius: 12px;
-    background-color:#FFFFFF;
+    background-image: url(champions.jpg);
 }
 
 .camisetas_fila1{
@@ -102,56 +107,6 @@
     text-align: center;
 }
 
-.calzado img{
-    width: 200px;
-    height: 200px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    border-radius: 12px;
-}
-
-.calzado_fila1{
-    display: flex;
-    flex-direction: row;
-    gap: 270px;
-    background-color: rgb(218, 218, 228);
-    padding-top: 15px;
-    padding-left: 2rem;
-
-}
-
-.calzado_fila2{
-    display: flex;
-    flex-direction: row;
-    gap: 275px;
-    background-color: rgb(218, 218, 228);
-
-}
-
-.complementos_fila1{
-    display: flex;
-    flex-direction: row;
-    gap: 300px;
-    padding-top: 15px;
-    background-color: rgb(218, 218, 228);
-}
-
-.complementos_fila2{
-    display: flex;
-    flex-direction: row;
-    gap: 300px;
-    background-color: rgb(218, 218, 228);
-}
-
-.complementos img{
-    width: 200px;
-    height: 200px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-   border-radius: 19px;
-   background-color: #FFFFFF;
-
-}
 
 .ultimaseccion{
     background-color:chocolate;
@@ -192,7 +147,7 @@
 }
 
 .container_input input{
-    width: 25%;
+    width: 40%;
     height: 30%;
     padding: 5px 10px;
 }
@@ -239,6 +194,20 @@ footer p{
 
 .pagos img{
     width: 4rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+}
+
+.redes img{
+    width: 2rem;
+    flex-direction: row;
+    text-align: center;
+    
 }
 
 
